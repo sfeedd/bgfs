@@ -6,9 +6,9 @@ class TeamViewSet(viewsets.ModelViewSet):
     queryset = Team.objects.all()
     serializer_class = TeamSerializer
 
-class MemberViewSet(viewsets.ModelViewSet):
-    queryset = Player.objects.all()
-    serializer_class = MemberSerializer
+class PlayerViewSet(viewsets.ModelViewSet):
+    queryset = Player.objects.all().order_by('number')  # 등번호 오름차순
+    serializer_class = PlayerSerializer
 
 class GalleryViewSet(viewsets.ModelViewSet):
     queryset = GalleryItem.objects.all()

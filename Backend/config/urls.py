@@ -5,7 +5,7 @@ from teams import views
 
 router = routers.DefaultRouter()
 router.register(r'teams', views.TeamViewSet)
-router.register(r'members', views.MemberViewSet)
+router.register(r'players', views.PlayerViewSet)
 router.register(r'gallery', views.GalleryViewSet)
 router.register(r'notices', views.NoticeViewSet)
 router.register(r'applications', views.ApplicationViewSet)
