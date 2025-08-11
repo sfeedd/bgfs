@@ -1,0 +1,26 @@
+Team: 팀 이름, 로고 이미지, 소개, 연혁, 비전 등
+
+Member: 선수/회원 (이름, 사진, 성별, 등번호, 포지션 등)
+
+Match: 경기 일정, 상대팀, 장소, 결과, 득점자 등
+
+GalleryItem: 사진/영상 URL, 설명, 업로드일
+
+Notice: 공지사항 제목, 내용, 작성일
+
+Application: 신규 멤버 가입 신청서 (이름, 연락처, 메시지 등)
+
+Contact: 관리자 연락처 정보 (이메일, 카카오톡, 전화번호 등)
+
+requirements.txt 설치 명령어
+pip install -r requirements.txt
+
+가상환경 설정
+.\venv\Scripts\activate
+
+
+python manage.py makemigrations
+python manage.py migrate
+python manage.py createsuperuser
+python manage.py runserver
+
