@@ -1,3 +1,8 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* 다크 모드 변형 */
 @custom-variant dark (&:is(.dark *));
 
 :root {
@@ -41,6 +46,7 @@
   --sidebar-ring: #dc2626;
 }
 
+/* 다크 모드 */
 .dark {
   --background: oklch(0.145 0 0);
   --foreground: oklch(0.985 0 0);
@@ -78,6 +84,7 @@
   --sidebar-ring: oklch(0.439 0 0);
 }
 
+/* Tailwind Theme 연결 */
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
@@ -119,9 +126,11 @@
   --color-sidebar-ring: var(--sidebar-ring);
 }
 
+/* 기본 스타일 */
 @layer base {
   * {
-    @apply border-border outline-ring/50;
+    /* outline-ring/50 → Tailwind 호환 ring 클래스로 교체 */
+    @apply border-border ring-1 ring-[color:var(--ring)/50];
   }
 
   body {
@@ -129,9 +138,7 @@
   }
 }
 
-/**
- * Base typography. This is not applied to elements which have an ancestor with a Tailwind text class.
- */
+/* 기본 타이포그래피 */
 @layer base {
   :where(:not(:has([class*=" text-"]), :not(:has([class^="text-"])))) {
     h1 {
