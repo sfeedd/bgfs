@@ -1,3 +1,6 @@
+import { Slot } from "@radix-ui/react-slot";
+import { cva } from "class-variance-authority";
+import { CheckIcon } from "lucide-react";
 import { Card, CardContent, CardHeader, CardTitle } from "../ui/card";
 import { Button } from "../ui/button";
 import { Input } from "../ui/input";

@@ -1,4 +1,4 @@
-import { ImageWithFallback } from "./figma/ImageWithFallback";
+import { ImageWithFallback } from "../figma/ImageWithFallback";
 import { Card, CardContent } from "../ui/card";
 import { Badge } from "../ui/badge";
 import { Play, Calendar, Camera } from "lucide-react";

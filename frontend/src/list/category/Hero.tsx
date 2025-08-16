@@ -1,5 +1,5 @@
 import { Button } from "../ui/button";
-import { ImageWithFallback } from "./figma/ImageWithFallback";
+import { ImageWithFallback } from "../figma/ImageWithFallback";
 import { Calendar, MapPin, Trophy } from "lucide-react";
 
 export function Hero() {
